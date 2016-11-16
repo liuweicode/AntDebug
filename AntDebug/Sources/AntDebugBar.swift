@@ -40,6 +40,12 @@ class AntDebugBar: UIWindow
     // 查看日志
     var logBtn: UIButton?
     
+    // 日志代理窗口切换
+    var gaBtn: UIButton?
+    // 界面View描边
+    var strokeBtn: UIButton?
+    
+    
     // 蚂蚁开关
     lazy var antBtn: UIButton = {
         let btn = UIButton(type: .custom)
@@ -105,6 +111,14 @@ class AntDebugBar: UIWindow
             make.top.equalTo(apiUATBtn!.snp.bottom).offset(1)
         })
         
+        gaBtn = createButton(withTitle: "GA 🌚", action: #selector(toggleGAScreen(_:)))
+        contentView.addSubview(gaBtn!)
+        gaBtn?.snp.makeConstraints { (make) in
+            make.left.width.height.equalTo(apiDevelopBtn!)
+            make.top.equalTo(apiProductionBtn!.snp.bottom).offset(1)
+        }
+        
+        
         closeWindowBtn = createButton(withTitle: "关闭窗口", action: #selector(changeApiEnvironmentToPRO(_:)))
         contentView.addSubview(closeWindowBtn!)
         closeWindowBtn?.snp.makeConstraints { (make) in
@@ -134,11 +148,18 @@ class AntDebugBar: UIWindow
             make.top.equalTo(rulerBtn!.snp.bottom).offset(1)
         })
         
+        strokeBtn = createButton(withTitle: "Layer border", action: #selector(showAllLayerBorder(_:)))
+        contentView.addSubview(strokeBtn!)
+        strokeBtn?.snp.makeConstraints { (make) in
+            make.left.width.height.equalTo(closeWindowBtn!)
+            make.top.equalTo(logBtn!.snp.bottom).offset(1)
+        }
+        
         contentView.snp.remakeConstraints { (make) in
             make.top.equalTo(self)
             make.centerX.equalTo(self)
             make.width.equalTo(self).multipliedBy(0.8)
-            make.bottom.equalTo(logBtn!.snp.bottom)
+            make.bottom.equalTo(strokeBtn!.snp.bottom)
         }
         
         antBtn.addTarget(self, action: #selector(toggleOpenClose), for: .touchUpInside)
@@ -245,23 +266,62 @@ extension AntDebugBar
     @objc fileprivate func changeApiEnvironmentToDEV(_ sender: UIButton)
     {
         print("开发环境")
+        
+        
+        self.perform(#selector(toggleClose), with: nil, afterDelay: 0.5)
     }
     
     // 切换到SIT环境
     @objc fileprivate func changeApiEnvironmentToSIT(_ sender: UIButton)
     {
+        self.perform(#selector(toggleClose), with: nil, afterDelay: 0.5)
         print("SIT环境")
     }
     
     // 切换到UAT环境
     @objc fileprivate func changeApiEnvironmentToUAT(_ sender: UIButton)
     {
+        self.perform(#selector(toggleClose), with: nil, afterDelay: 0.5)
         print("UAT环境")
     }
     
     // 切换到生产环境
     @objc fileprivate func changeApiEnvironmentToPRO(_ sender: UIButton)
     {
+        self.perform(#selector(toggleClose), with: nil, afterDelay: 0.5)
         print("生产环境")
+    }
+    
+    // 切换日志显示
+    @objc fileprivate func toggleGAScreen(_ sender: UIButton)
+    {
+        GALogWindow.instance().isHidden = !GALogWindow.instance().isHidden
+        let sun = GALogWindow.instance().isHidden ?  "🌚" : "🌞"
+        sender.setTitle("GA \(sun)", for: .normal)
+        self.perform(#selector(toggleClose), with: nil, afterDelay: 0.5)
+    }
+    
+    // 显示 View border
+    @objc fileprivate func showAllLayerBorder(_ sender: UIButton)
+    {
+        if let vc = UIApplication.shared.keyWindow?.rootViewController
+        {
+            uiViewBoundsDebug(view: vc.view)
+        }
+        self.perform(#selector(toggleClose), with: nil, afterDelay: 0.5)
+    }
+    
+    private func uiViewBoundsDebug(view:UIView)
+    {
+        if view.subviews.count <= 0
+        {
+            return
+        }
+        
+        view.subviews.enumerated().forEach { (index, element) in
+            element.layer.borderWidth = 1
+            element.layer.borderColor = ColorUtil.randomColor().cgColor
+            uiViewBoundsDebug(view: element)
+        }
     }
 }
