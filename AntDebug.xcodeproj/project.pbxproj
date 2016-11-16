@@ -20,6 +20,8 @@
 		FE4796281DDC3742000C75C2 /* RulerHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4796271DDC3742000C75C2 /* RulerHorizontalView.swift */; };
 		FE47962A1DDC402D000C75C2 /* GALogWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4796291DDC402D000C75C2 /* GALogWindow.swift */; };
 		FE8B9B3A1DDC4AB3004EB45C /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B391DDC4AB3004EB45C /* ColorUtil.swift */; };
+		FE8B9B3C1DDC4EDA004EB45C /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B3B1DDC4EDA004EB45C /* DateUtil.swift */; };
+		FE8B9B3E1DDC5596004EB45C /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B3D1DDC5596004EB45C /* StringUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		FE4796271DDC3742000C75C2 /* RulerHorizontalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulerHorizontalView.swift; sourceTree = "<group>"; };
 		FE4796291DDC402D000C75C2 /* GALogWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GALogWindow.swift; sourceTree = "<group>"; };
 		FE8B9B391DDC4AB3004EB45C /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		FE8B9B3B1DDC4EDA004EB45C /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		FE8B9B3D1DDC5596004EB45C /* StringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				FE4796251DDC3730000C75C2 /* RulerVerticalView.swift */,
 				FE4796271DDC3742000C75C2 /* RulerHorizontalView.swift */,
 				FE4796291DDC402D000C75C2 /* GALogWindow.swift */,
+				FE8B9B3B1DDC4EDA004EB45C /* DateUtil.swift */,
+				FE8B9B3D1DDC5596004EB45C /* StringUtil.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -242,10 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE8B9B3A1DDC4AB3004EB45C /* ColorUtil.swift in Sources */,
+				FE8B9B3C1DDC4EDA004EB45C /* DateUtil.swift in Sources */,
 				FE4796281DDC3742000C75C2 /* RulerHorizontalView.swift in Sources */,
 				FE47960F1DDBFFFF000C75C2 /* ViewController.swift in Sources */,
 				FE4796201DDC0083000C75C2 /* AntDebugBar.swift in Sources */,
 				FE47960D1DDBFFFF000C75C2 /* AppDelegate.swift in Sources */,
+				FE8B9B3E1DDC5596004EB45C /* StringUtil.swift in Sources */,
 				FE4796221DDC2529000C75C2 /* ImageUtil.swift in Sources */,
 				FE4796241DDC3682000C75C2 /* DebugRuler.swift in Sources */,
 				FE47962A1DDC402D000C75C2 /* GALogWindow.swift in Sources */,
@@ -315,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -358,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -373,8 +381,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6RRV39ZH3P;
 				INFOPLIST_FILE = AntDebug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.linkim.demo.AntDebug;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.linkim.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -387,8 +396,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6RRV39ZH3P;
 				INFOPLIST_FILE = AntDebug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.linkim.demo.AntDebug;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.linkim.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
