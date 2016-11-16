@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            AntDebugBar.sharedInstance.isHidden = false
+        }
+        
         return true
     }
 

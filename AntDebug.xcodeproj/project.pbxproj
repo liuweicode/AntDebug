@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2E8437CB0C3D72D4C206E6D /* Pods_AntDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFF9AD5932A4376499DBEAB /* Pods_AntDebug.framework */; };
 		FE47960D1DDBFFFF000C75C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47960C1DDBFFFF000C75C2 /* AppDelegate.swift */; };
 		FE47960F1DDBFFFF000C75C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47960E1DDBFFFF000C75C2 /* ViewController.swift */; };
 		FE4796121DDBFFFF000C75C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4796101DDBFFFF000C75C2 /* Main.storyboard */; };
 		FE4796141DDBFFFF000C75C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4796131DDBFFFF000C75C2 /* Assets.xcassets */; };
 		FE4796171DDBFFFF000C75C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4796151DDBFFFF000C75C2 /* LaunchScreen.storyboard */; };
+		FE4796201DDC0083000C75C2 /* AntDebugBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47961F1DDC0083000C75C2 /* AntDebugBar.swift */; };
+		FE4796221DDC2529000C75C2 /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4796211DDC2529000C75C2 /* ImageUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D182F0F2A27A7DEAD79CBFE /* Pods-AntDebug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntDebug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntDebug/Pods-AntDebug.debug.xcconfig"; sourceTree = "<group>"; };
+		4CFF9AD5932A4376499DBEAB /* Pods_AntDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD61078423597DCEA0E0FD9F /* Pods-AntDebug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntDebug.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntDebug/Pods-AntDebug.release.xcconfig"; sourceTree = "<group>"; };
 		FE4796091DDBFFFF000C75C2 /* AntDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE47960C1DDBFFFF000C75C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE47960E1DDBFFFF000C75C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		FE4796131DDBFFFF000C75C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4796161DDBFFFF000C75C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE4796181DDBFFFF000C75C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE47961F1DDC0083000C75C2 /* AntDebugBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDebugBar.swift; sourceTree = "<group>"; };
+		FE4796211DDC2529000C75C2 /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E8437CB0C3D72D4C206E6D /* Pods_AntDebug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88A6FB36896D3FCE260EE7E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D182F0F2A27A7DEAD79CBFE /* Pods-AntDebug.debug.xcconfig */,
+				DD61078423597DCEA0E0FD9F /* Pods-AntDebug.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7F2DB5F3BD58A17ED541CAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CFF9AD5932A4376499DBEAB /* Pods_AntDebug.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE4796001DDBFFFF000C75C2 = {
 			isa = PBXGroup;
 			children = (
 				FE47960B1DDBFFFF000C75C2 /* AntDebug */,
 				FE47960A1DDBFFFF000C75C2 /* Products */,
+				88A6FB36896D3FCE260EE7E1 /* Pods */,
+				D7F2DB5F3BD58A17ED541CAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +82,7 @@
 		FE47960B1DDBFFFF000C75C2 /* AntDebug */ = {
 			isa = PBXGroup;
 			children = (
+				FE47961E1DDC0035000C75C2 /* Sources */,
 				FE47960C1DDBFFFF000C75C2 /* AppDelegate.swift */,
 				FE47960E1DDBFFFF000C75C2 /* ViewController.swift */,
 				FE4796101DDBFFFF000C75C2 /* Main.storyboard */,
@@ -64,6 +93,15 @@
 			path = AntDebug;
 			sourceTree = "<group>";
 		};
+		FE47961E1DDC0035000C75C2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FE47961F1DDC0083000C75C2 /* AntDebugBar.swift */,
+				FE4796211DDC2529000C75C2 /* ImageUtil.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE47961B1DDBFFFF000C75C2 /* Build configuration list for PBXNativeTarget "AntDebug" */;
 			buildPhases = (
+				5ADFD9CA380DD23CD13C0A98 /* [CP] Check Pods Manifest.lock */,
 				FE4796051DDBFFFF000C75C2 /* Sources */,
 				FE4796061DDBFFFF000C75C2 /* Frameworks */,
 				FE4796071DDBFFFF000C75C2 /* Resources */,
+				7AA872B7F834B431DC60A461 /* [CP] Embed Pods Frameworks */,
+				5723E833BD4DBD03CCC627C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +173,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5723E833BD4DBD03CCC627C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntDebug/Pods-AntDebug-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ADFD9CA380DD23CD13C0A98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA872B7F834B431DC60A461 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntDebug/Pods-AntDebug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE4796051DDBFFFF000C75C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FE47960F1DDBFFFF000C75C2 /* ViewController.swift in Sources */,
+				FE4796201DDC0083000C75C2 /* AntDebugBar.swift in Sources */,
 				FE47960D1DDBFFFF000C75C2 /* AppDelegate.swift in Sources */,
+				FE4796221DDC2529000C75C2 /* ImageUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +348,7 @@
 		};
 		FE47961C1DDBFFFF000C75C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D182F0F2A27A7DEAD79CBFE /* Pods-AntDebug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6RRV39ZH3P;
@@ -270,6 +362,7 @@
 		};
 		FE47961D1DDBFFFF000C75C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD61078423597DCEA0E0FD9F /* Pods-AntDebug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6RRV39ZH3P;
@@ -300,6 +393,7 @@
 				FE47961D1DDBFFFF000C75C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

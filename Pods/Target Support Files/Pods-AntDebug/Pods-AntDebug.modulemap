@@ -1,0 +1,6 @@
+framework module Pods_AntDebug {
+  umbrella header "Pods-AntDebug-umbrella.h"
+
+  export *
+  module * { export * }
+}
