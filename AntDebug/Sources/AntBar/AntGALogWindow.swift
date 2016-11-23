@@ -103,13 +103,13 @@ class AntGALogWindow: UIView {
         }
     }
     
-    func showGAEvent(withCategory ca:String, action act:String, label lab:String, value val:Int, extras ext:String?)
+    func showGAEvent(withCategory ca:String?, action act:String?, label lab:String?, value val:Int?, extras ext:String?)
     {
         let obj = AntGALogObject()
-        obj.category = ca
-        obj.action = act
-        obj.label = lab
-        obj.value = val
+        obj.category = ca ?? ""
+        obj.action = act ?? ""
+        obj.label = lab ?? ""
+        obj.value = val ?? 0
         obj.extras = ext != nil ? ext!.replacingOccurrences(of: "\n", with: "") : ""
         obj.time = AntDateUtil.getCurrentDate()
         

@@ -18,6 +18,7 @@
 		FE0D9BFD1DE57C3B00B53D15 /* AntFileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BF31DE57C3B00B53D15 /* AntFileUtil.swift */; };
 		FE0D9BFE1DE57C3B00B53D15 /* AntImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BF41DE57C3B00B53D15 /* AntImageUtil.swift */; };
 		FE0D9BFF1DE57C3B00B53D15 /* AntStringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BF51DE57C3B00B53D15 /* AntStringUtil.swift */; };
+		FE0D9C011DE57C7600B53D15 /* AntLogMoudle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9C001DE57C7600B53D15 /* AntLogMoudle.swift */; };
 		FE47960D1DDBFFFF000C75C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47960C1DDBFFFF000C75C2 /* AppDelegate.swift */; };
 		FE47960F1DDBFFFF000C75C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47960E1DDBFFFF000C75C2 /* ViewController.swift */; };
 		FE4796121DDBFFFF000C75C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4796101DDBFFFF000C75C2 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		FE0D9BF31DE57C3B00B53D15 /* AntFileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntFileUtil.swift; sourceTree = "<group>"; };
 		FE0D9BF41DE57C3B00B53D15 /* AntImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntImageUtil.swift; sourceTree = "<group>"; };
 		FE0D9BF51DE57C3B00B53D15 /* AntStringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntStringUtil.swift; sourceTree = "<group>"; };
+		FE0D9C001DE57C7600B53D15 /* AntLogMoudle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntLogMoudle.swift; sourceTree = "<group>"; };
 		FE4796091DDBFFFF000C75C2 /* AntDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE47960C1DDBFFFF000C75C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE47960E1DDBFFFF000C75C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		FE0D9BEF1DE57C3B00B53D15 /* AntLog */ = {
 			isa = PBXGroup;
 			children = (
+				FE0D9C001DE57C7600B53D15 /* AntLogMoudle.swift */,
 			);
 			path = AntLog;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0D9C011DE57C7600B53D15 /* AntLogMoudle.swift in Sources */,
 				FE0D9BFC1DE57C3B00B53D15 /* AntDateUtil.swift in Sources */,
 				FE0D9BF81DE57C3B00B53D15 /* AntGALogWindow.swift in Sources */,
 				FE47960F1DDBFFFF000C75C2 /* ViewController.swift in Sources */,
