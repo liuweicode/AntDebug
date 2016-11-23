@@ -177,4 +177,18 @@ class AntFileUtil: NSObject {
         }
         return 0
     }
+    
+    // 读取文件内容
+    class func readStringWithContentsOfFile(_ filePath:String) -> String?
+    {
+        var content:String? = nil
+        if AntFileUtil.isFileExists(filePath) {
+            do{
+                content = try String(contentsOfFile: filePath, encoding: String.Encoding.utf8)
+            }catch let error as NSError{
+                print(error.description)
+            }
+        }
+        return content
+    }
 }
