@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DebugRuler: UIView {
+class AntDebugRuler: UIView {
 
    
 }

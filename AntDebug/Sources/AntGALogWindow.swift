@@ -1,5 +1,5 @@
 //
-//  GALogWindow.swift
+//  AntGALogWindow.swift
 //  AntDebug
 //
 //  Created by 刘伟 on 16/11/2016.
@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class GALogObject: NSObject {
+class AntGALogObject: NSObject {
     var category: String = ""
     var action: String = ""
     var label: String = ""
@@ -21,13 +21,13 @@ class GALogObject: NSObject {
 let kGALogCount = 20
 let kGALogWindowHeight:CGFloat = 200
 let kGALogFontSize:CGFloat = 14
-var gaLogWindow: GALogWindow?
+var gaLogWindow: AntGALogWindow?
 
-class GALogWindow: UIView {
+class AntGALogWindow: UIView {
     
     var timer: Timer?
     
-    lazy var gaArray = [GALogObject]()
+    lazy var gaArray = [AntGALogObject]()
     
     let tableView: UITableView = {
         let tableView = UITableView(frame: CGRect.zero, style: UITableViewStyle.plain)
@@ -50,13 +50,13 @@ class GALogWindow: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    class func instance() -> GALogWindow
+    class func instance() -> AntGALogWindow
     {
         if gaLogWindow == nil
         {
             let screenSize = UIScreen.main.bounds.size
             let y = screenSize.height - kGALogWindowHeight - 50
-            gaLogWindow = GALogWindow(frame: CGRect(x: 0, y: y, width: screenSize.width, height: kGALogWindowHeight))
+            gaLogWindow = AntGALogWindow(frame: CGRect(x: 0, y: y, width: screenSize.width, height: kGALogWindowHeight))
             gaLogWindow?.isHidden = true
         }
         return gaLogWindow!
@@ -106,13 +106,13 @@ class GALogWindow: UIView {
     
     func showGAEvent(withCategory ca:String, action act:String, label lab:String, value val:Int, extras ext:String?)
     {
-        let obj = GALogObject()
+        let obj = AntGALogObject()
         obj.category = ca
         obj.action = act
         obj.label = lab
         obj.value = val
         obj.extras = ext != nil ? ext!.replacingOccurrences(of: "\n", with: "") : ""
-        obj.time = DateUtil.getCurrentDate()
+        obj.time = AntDateUtil.getCurrentDate()
         
         gaArray.insert(obj, at: 0)
         
@@ -137,7 +137,7 @@ class GALogWindow: UIView {
     }
 }
 
-extension GALogWindow: UITableViewDataSource, UITableViewDelegate
+extension AntGALogWindow: UITableViewDataSource, UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.gaArray.count
@@ -224,7 +224,7 @@ extension GALogWindow: UITableViewDataSource, UITableViewDelegate
 }
 
 
-extension GALogWindow
+extension AntGALogWindow
 {
     func changeToHide()
     {

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func click(_ sender: Any) {
-        GALogWindow.instance().showGAEvent(withCategory: "测试分类", action: "测试Action", label: "测试label", value: 0, extras: "很长很长很长很长很长很长很长很长很长很长很长很长很长很长")
+        AntGALogWindow.instance().showGAEvent(withCategory: "测试分类", action: "测试Action", label: "测试label", value: 0, extras: "很长很长很长很长很长很长很长很长很长很长很长很长很长很长")
     }
 
 }

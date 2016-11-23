@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DateUtil: NSObject {
+class AntDateUtil: NSObject {
 
     class func getCurrentDate() -> Date
     {

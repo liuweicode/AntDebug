@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageUtil: NSObject {
+class AntImageUtil: NSObject {
 
     class func imageWithColor(_ color:UIColor) -> UIImage
     {

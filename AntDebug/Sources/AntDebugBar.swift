@@ -63,8 +63,8 @@ class AntDebugBar: UIWindow
         button.titleLabel?.font = UIFont.systemFont(ofSize: 10)
         button.setTitleColor(UIColor.black, for: .normal)
         button.setTitleColor(UIColor.white, for: .highlighted)
-        button.setBackgroundImage(ImageUtil.imageWithColor(UIColor(red: 232.0/255.0, green: 232.0/255.0, blue: 232.0/255.0, alpha: 1)), for: .normal)
-        button.setBackgroundImage(ImageUtil.imageWithColor(UIColor(red: 232.0/255.0, green: 232.0/255.0, blue: 232.0/255.0, alpha: 0.8)), for: .highlighted)
+        button.setBackgroundImage(AntImageUtil.imageWithColor(UIColor(red: 232.0/255.0, green: 232.0/255.0, blue: 232.0/255.0, alpha: 1)), for: .normal)
+        button.setBackgroundImage(AntImageUtil.imageWithColor(UIColor(red: 232.0/255.0, green: 232.0/255.0, blue: 232.0/255.0, alpha: 0.8)), for: .highlighted)
         button.addTarget(self, action: act, for: .touchUpInside)
         return button
     }
@@ -295,8 +295,8 @@ extension AntDebugBar
     // 切换日志显示
     @objc fileprivate func toggleGAScreen(_ sender: UIButton)
     {
-        GALogWindow.instance().isHidden = !GALogWindow.instance().isHidden
-        let sun = GALogWindow.instance().isHidden ?  "🌚" : "🌞"
+        AntGALogWindow.instance().isHidden = !AntGALogWindow.instance().isHidden
+        let sun = AntGALogWindow.instance().isHidden ?  "🌚" : "🌞"
         sender.setTitle("GA \(sun)", for: .normal)
         self.perform(#selector(toggleClose), with: nil, afterDelay: 0.5)
     }
@@ -320,7 +320,7 @@ extension AntDebugBar
         
         view.subviews.enumerated().forEach { (index, element) in
             element.layer.borderWidth = 1
-            element.layer.borderColor = ColorUtil.randomColor().cgColor
+            element.layer.borderColor = AntColorUtil.randomColor().cgColor
             uiViewBoundsDebug(view: element)
         }
     }
