@@ -98,7 +98,7 @@ func ANT_LOG_NETWORK_REQUEST(_ message: @autoclosure () -> String, file: StaticS
         let theFileName = ("\(file)" as NSString).lastPathComponent
         print("\n\n⬆️⬆️\(theFileName)|\(function)|\(line):\(message())")
         
-        _ant_write_log_to_file(content: "\n\n⬆️⬆️\(theFileName)|\(function)|\(line):\(message())")
+        _ant_write_log_to_file(content: "\n\n⬆️⬆️\(theFileName)|\(function)|\(line):\(message())", filePath: ANT_LOG_NETWORK_FILE_PATH)
         
     #endif
 }
@@ -112,7 +112,7 @@ func ANT_LOG_NETWORK_RESPONSE(_ message: @autoclosure () -> String, file: Static
         let theFileName = ("\(file)" as NSString).lastPathComponent
         print("\n\n⬇️⬇️\(theFileName)|\(function)|\(line):\(message())")
         
-        _ant_write_log_to_file(content: "\n\n⬇️⬇️\(theFileName)|\(function)|\(line):\(message())")
+        _ant_write_log_to_file(content: "\n\n⬇️⬇️\(theFileName)|\(function)|\(line):\(message())", filePath: ANT_LOG_NETWORK_FILE_PATH)
         
     #endif
 }
@@ -126,7 +126,7 @@ func ANT_LOG_NETWORK_ERROR(_ message: @autoclosure () -> String, file: StaticStr
         let theFileName = ("\(file)" as NSString).lastPathComponent
         print("\n\n😭😭😭😭😭😭Fuck！！！\(theFileName)|\(function)|\(line):\(message())")
         
-        _ant_write_log_to_file(content: "\n\n😭😭😭😭😭😭Fuck！！！\(theFileName)|\(function)|\(line):\(message())")
+        _ant_write_log_to_file(content: "\n\n😭😭😭😭😭😭Fuck！！！\(theFileName)|\(function)|\(line):\(message())", filePath: ANT_LOG_NETWORK_FILE_PATH)
         
     #endif
 }
