@@ -67,7 +67,6 @@ class AntGALogWindow: UIView {
         gaLogWindow = nil
     }
     
-    
     override var isHidden: Bool
     {
         get{

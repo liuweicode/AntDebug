@@ -8,26 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		E2E8437CB0C3D72D4C206E6D /* Pods_AntDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFF9AD5932A4376499DBEAB /* Pods_AntDebug.framework */; };
+		FE0D9BF61DE57C3B00B53D15 /* AntDebugBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BEA1DE57C3B00B53D15 /* AntDebugBar.swift */; };
+		FE0D9BF71DE57C3B00B53D15 /* AntDebugRuler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BEB1DE57C3B00B53D15 /* AntDebugRuler.swift */; };
+		FE0D9BF81DE57C3B00B53D15 /* AntGALogWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BEC1DE57C3B00B53D15 /* AntGALogWindow.swift */; };
+		FE0D9BF91DE57C3B00B53D15 /* AntRulerHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BED1DE57C3B00B53D15 /* AntRulerHorizontalView.swift */; };
+		FE0D9BFA1DE57C3B00B53D15 /* AntRulerVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BEE1DE57C3B00B53D15 /* AntRulerVerticalView.swift */; };
+		FE0D9BFB1DE57C3B00B53D15 /* AntColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BF11DE57C3B00B53D15 /* AntColorUtil.swift */; };
+		FE0D9BFC1DE57C3B00B53D15 /* AntDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BF21DE57C3B00B53D15 /* AntDateUtil.swift */; };
+		FE0D9BFD1DE57C3B00B53D15 /* AntFileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BF31DE57C3B00B53D15 /* AntFileUtil.swift */; };
+		FE0D9BFE1DE57C3B00B53D15 /* AntImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BF41DE57C3B00B53D15 /* AntImageUtil.swift */; };
+		FE0D9BFF1DE57C3B00B53D15 /* AntStringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D9BF51DE57C3B00B53D15 /* AntStringUtil.swift */; };
 		FE47960D1DDBFFFF000C75C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47960C1DDBFFFF000C75C2 /* AppDelegate.swift */; };
 		FE47960F1DDBFFFF000C75C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47960E1DDBFFFF000C75C2 /* ViewController.swift */; };
 		FE4796121DDBFFFF000C75C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4796101DDBFFFF000C75C2 /* Main.storyboard */; };
 		FE4796141DDBFFFF000C75C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4796131DDBFFFF000C75C2 /* Assets.xcassets */; };
 		FE4796171DDBFFFF000C75C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4796151DDBFFFF000C75C2 /* LaunchScreen.storyboard */; };
-		FE4796201DDC0083000C75C2 /* AntDebugBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47961F1DDC0083000C75C2 /* AntDebugBar.swift */; };
-		FE4796221DDC2529000C75C2 /* AntImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4796211DDC2529000C75C2 /* AntImageUtil.swift */; };
-		FE4796241DDC3682000C75C2 /* AntDebugRuler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4796231DDC3682000C75C2 /* AntDebugRuler.swift */; };
-		FE4796261DDC3730000C75C2 /* AntRulerVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4796251DDC3730000C75C2 /* AntRulerVerticalView.swift */; };
-		FE4796281DDC3742000C75C2 /* AntRulerHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4796271DDC3742000C75C2 /* AntRulerHorizontalView.swift */; };
-		FE47962A1DDC402D000C75C2 /* AntGALogWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4796291DDC402D000C75C2 /* AntGALogWindow.swift */; };
-		FE8B9B3A1DDC4AB3004EB45C /* AntColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B391DDC4AB3004EB45C /* AntColorUtil.swift */; };
-		FE8B9B3C1DDC4EDA004EB45C /* AntDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B3B1DDC4EDA004EB45C /* AntDateUtil.swift */; };
-		FE8B9B3E1DDC5596004EB45C /* AntStringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B3D1DDC5596004EB45C /* AntStringUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D182F0F2A27A7DEAD79CBFE /* Pods-AntDebug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntDebug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntDebug/Pods-AntDebug.debug.xcconfig"; sourceTree = "<group>"; };
 		4CFF9AD5932A4376499DBEAB /* Pods_AntDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD61078423597DCEA0E0FD9F /* Pods-AntDebug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntDebug.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntDebug/Pods-AntDebug.release.xcconfig"; sourceTree = "<group>"; };
+		FE0D9BEA1DE57C3B00B53D15 /* AntDebugBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDebugBar.swift; sourceTree = "<group>"; };
+		FE0D9BEB1DE57C3B00B53D15 /* AntDebugRuler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDebugRuler.swift; sourceTree = "<group>"; };
+		FE0D9BEC1DE57C3B00B53D15 /* AntGALogWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntGALogWindow.swift; sourceTree = "<group>"; };
+		FE0D9BED1DE57C3B00B53D15 /* AntRulerHorizontalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntRulerHorizontalView.swift; sourceTree = "<group>"; };
+		FE0D9BEE1DE57C3B00B53D15 /* AntRulerVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntRulerVerticalView.swift; sourceTree = "<group>"; };
+		FE0D9BF11DE57C3B00B53D15 /* AntColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntColorUtil.swift; sourceTree = "<group>"; };
+		FE0D9BF21DE57C3B00B53D15 /* AntDateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDateUtil.swift; sourceTree = "<group>"; };
+		FE0D9BF31DE57C3B00B53D15 /* AntFileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntFileUtil.swift; sourceTree = "<group>"; };
+		FE0D9BF41DE57C3B00B53D15 /* AntImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntImageUtil.swift; sourceTree = "<group>"; };
+		FE0D9BF51DE57C3B00B53D15 /* AntStringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntStringUtil.swift; sourceTree = "<group>"; };
 		FE4796091DDBFFFF000C75C2 /* AntDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE47960C1DDBFFFF000C75C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE47960E1DDBFFFF000C75C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,15 +46,6 @@
 		FE4796131DDBFFFF000C75C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4796161DDBFFFF000C75C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE4796181DDBFFFF000C75C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE47961F1DDC0083000C75C2 /* AntDebugBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDebugBar.swift; sourceTree = "<group>"; };
-		FE4796211DDC2529000C75C2 /* AntImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntImageUtil.swift; sourceTree = "<group>"; };
-		FE4796231DDC3682000C75C2 /* AntDebugRuler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDebugRuler.swift; sourceTree = "<group>"; };
-		FE4796251DDC3730000C75C2 /* AntRulerVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntRulerVerticalView.swift; sourceTree = "<group>"; };
-		FE4796271DDC3742000C75C2 /* AntRulerHorizontalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntRulerHorizontalView.swift; sourceTree = "<group>"; };
-		FE4796291DDC402D000C75C2 /* AntGALogWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntGALogWindow.swift; sourceTree = "<group>"; };
-		FE8B9B391DDC4AB3004EB45C /* AntColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntColorUtil.swift; sourceTree = "<group>"; };
-		FE8B9B3B1DDC4EDA004EB45C /* AntDateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDateUtil.swift; sourceTree = "<group>"; };
-		FE8B9B3D1DDC5596004EB45C /* AntStringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntStringUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,37 @@
 				4CFF9AD5932A4376499DBEAB /* Pods_AntDebug.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE0D9BE91DE57C3B00B53D15 /* AntBar */ = {
+			isa = PBXGroup;
+			children = (
+				FE0D9BEA1DE57C3B00B53D15 /* AntDebugBar.swift */,
+				FE0D9BEB1DE57C3B00B53D15 /* AntDebugRuler.swift */,
+				FE0D9BEC1DE57C3B00B53D15 /* AntGALogWindow.swift */,
+				FE0D9BED1DE57C3B00B53D15 /* AntRulerHorizontalView.swift */,
+				FE0D9BEE1DE57C3B00B53D15 /* AntRulerVerticalView.swift */,
+			);
+			path = AntBar;
+			sourceTree = "<group>";
+		};
+		FE0D9BEF1DE57C3B00B53D15 /* AntLog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AntLog;
+			sourceTree = "<group>";
+		};
+		FE0D9BF01DE57C3B00B53D15 /* AntUtil */ = {
+			isa = PBXGroup;
+			children = (
+				FE0D9BF11DE57C3B00B53D15 /* AntColorUtil.swift */,
+				FE0D9BF21DE57C3B00B53D15 /* AntDateUtil.swift */,
+				FE0D9BF31DE57C3B00B53D15 /* AntFileUtil.swift */,
+				FE0D9BF41DE57C3B00B53D15 /* AntImageUtil.swift */,
+				FE0D9BF51DE57C3B00B53D15 /* AntStringUtil.swift */,
+			);
+			path = AntUtil;
 			sourceTree = "<group>";
 		};
 		FE4796001DDBFFFF000C75C2 = {
@@ -110,15 +143,9 @@
 		FE47961E1DDC0035000C75C2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FE47961F1DDC0083000C75C2 /* AntDebugBar.swift */,
-				FE4796211DDC2529000C75C2 /* AntImageUtil.swift */,
-				FE8B9B391DDC4AB3004EB45C /* AntColorUtil.swift */,
-				FE4796231DDC3682000C75C2 /* AntDebugRuler.swift */,
-				FE4796251DDC3730000C75C2 /* AntRulerVerticalView.swift */,
-				FE4796271DDC3742000C75C2 /* AntRulerHorizontalView.swift */,
-				FE4796291DDC402D000C75C2 /* AntGALogWindow.swift */,
-				FE8B9B3B1DDC4EDA004EB45C /* AntDateUtil.swift */,
-				FE8B9B3D1DDC5596004EB45C /* AntStringUtil.swift */,
+				FE0D9BE91DE57C3B00B53D15 /* AntBar */,
+				FE0D9BEF1DE57C3B00B53D15 /* AntLog */,
+				FE0D9BF01DE57C3B00B53D15 /* AntUtil */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -247,17 +274,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8B9B3A1DDC4AB3004EB45C /* AntColorUtil.swift in Sources */,
-				FE8B9B3C1DDC4EDA004EB45C /* AntDateUtil.swift in Sources */,
-				FE4796281DDC3742000C75C2 /* AntRulerHorizontalView.swift in Sources */,
+				FE0D9BFC1DE57C3B00B53D15 /* AntDateUtil.swift in Sources */,
+				FE0D9BF81DE57C3B00B53D15 /* AntGALogWindow.swift in Sources */,
 				FE47960F1DDBFFFF000C75C2 /* ViewController.swift in Sources */,
-				FE4796201DDC0083000C75C2 /* AntDebugBar.swift in Sources */,
+				FE0D9BF61DE57C3B00B53D15 /* AntDebugBar.swift in Sources */,
+				FE0D9BFE1DE57C3B00B53D15 /* AntImageUtil.swift in Sources */,
+				FE0D9BFA1DE57C3B00B53D15 /* AntRulerVerticalView.swift in Sources */,
+				FE0D9BFD1DE57C3B00B53D15 /* AntFileUtil.swift in Sources */,
+				FE0D9BF91DE57C3B00B53D15 /* AntRulerHorizontalView.swift in Sources */,
+				FE0D9BFB1DE57C3B00B53D15 /* AntColorUtil.swift in Sources */,
+				FE0D9BF71DE57C3B00B53D15 /* AntDebugRuler.swift in Sources */,
+				FE0D9BFF1DE57C3B00B53D15 /* AntStringUtil.swift in Sources */,
 				FE47960D1DDBFFFF000C75C2 /* AppDelegate.swift in Sources */,
-				FE8B9B3E1DDC5596004EB45C /* AntStringUtil.swift in Sources */,
-				FE4796221DDC2529000C75C2 /* AntImageUtil.swift in Sources */,
-				FE4796241DDC3682000C75C2 /* AntDebugRuler.swift in Sources */,
-				FE47962A1DDC402D000C75C2 /* AntGALogWindow.swift in Sources */,
-				FE4796261DDC3730000C75C2 /* AntRulerVerticalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
